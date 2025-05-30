@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles/products.css">
+    <title>Услуги - Цифровик</title>
+</head>
+<body>
+        <div class="nav-container">
+        <a href="index.html" class="nav-link">Главная</a>
+        <a href="au.html" class="nav-link">О нас</a>
+        <a href="products.html" class="nav-link">Продукты</a>
+        <a href="form.html" class="nav-link">Контакты</a>
+    </div>
+        <header>
+        <h1>Цифровик</h1>
+        <p>Цифровые задачи для вашего бизнеса</p>
+    </header>
+
+    <section class="services-section">
+        <div class="services-grid">
+            <div class="service-card" onclick="openModal()">
+                <div class="service-image">
+                    <img src="https://timeweb.com/ru/community/article/09/0912714f5448f4f4364e7ada002ca64e.jpg" alt="Консалтинг">
+                </div>
+                <div class="service-content">
+                    <h3>Консалтинг</h3>
+                    <p>Экспертная помощь в цифровой трансформации вашего бизнеса с индивидуальным подходом.</p>
+                    <span class="tooltip">Нажмите для заказа</span>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://webonto.ru/wp-content/uploads/2021/08/web-development-1.jpg   " alt="Веб-разработка">
+                </div>
+                <div class="service-content">
+                    <h3>Веб-разработка</h3>
+                    <p>Создание современных и адаптивных веб-сайтов с уникальным дизайном и функционалом.</p>
+                    <span class="tooltip">Нажмите для заказа</span>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://webisgroup.ru/images/data/gallery/22_small_1603092512.jpg" alt="Мобильные приложения">
+                </div>
+                <div class="service-content">
+                    <h3>Мобильные приложения</h3>
+                    <p>Разработка мобильных приложений под Android и iOS с нативным пользовательским опытом.</p>
+                    <span class="tooltip">Нажмите для заказа</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-table">
+        <h2>Наши тарифы</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Пакет</th>
+                    <th>Описание</th>
+                    <th>Цена</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Базовый</td>
+                    <td>Подходит для небольших проектов и стартапов</td>
+                    <td>от 5000 ₽</td>
+                </tr>
+                <tr>
+                    <td>Профессиональный</td>
+                    <td>Для средних и крупных бизнесов</td>
+                    <td>от 15000 ₽</td>
+                </tr>
+                <tr>
+                    <td>Премиум</td>
+                    <td>Индивидуальные решения с полным сопровождением</td>
+                    <td>по запросу</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <div id="requestModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 style="margin-top: 0; color: var(--secondary);">Заказать звонок</h2>
+            <form onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <button type="submit" class="form-submit">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Цифровик. Все права защищены.</p>
+    </footer>
+
+    <script src="products.js"></script>
+</body>
+</html>
